@@ -1,0 +1,53 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  min-width: 300px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6{
+  //@extend .aller;
+}
+
+p{
+  line-height: 1.5;
+}
+
+blockquote{
+  border-left: 2px solid #DEDEDE;
+  padding-left: 1em;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+code{
+  font-family: monospace;
+  background: #EEE;
+  padding: .1em .25em;
+}
+
+pre{
+  background: #111;
+  padding: 1em;
+  line-height: 1.5;
+  margin: 0 0 2em;
+  white-space: pre-wrap;
+  code{
+    background: none;
+    padding: 0;
+  }
+  @include smaller-than(medium) {
+    font-size: .75em;
+  }
+}
+
+em {
+  font-style: italic;
+}

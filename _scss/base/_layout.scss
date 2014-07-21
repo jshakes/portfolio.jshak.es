@@ -1,0 +1,63 @@
+.content-wrapper{
+  color: $body_copy;
+  a{
+    text-decoration: none;
+  }
+  p a{
+    color: $red;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// Header
+
+.site-header{
+  text-align: center;
+  padding: 2em 0;
+  background: $red;
+  color: white;
+}
+
+.site-header-permalink{
+  color: white;
+  text-decoration: none;
+}
+
+.site-header-icon{
+  @include js-icon("jshakes-logo");
+  display: inline;
+  font-size: 0;
+  &:before{
+    font-size: 60px;
+  }
+}
+
+// Footer
+
+.site-footer{
+  text-align: center;
+  color: $light_grey;
+  padding: 2em 0;
+  a{
+    color: $light_grey;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// Pages
+
+.page-content{
+  max-width: $max_width;
+  margin: 3em auto 0;
+  padding: 0 1em;
+}
+
+.page-title{
+  font-size: 3em;
+  margin-bottom: 1em;
+}

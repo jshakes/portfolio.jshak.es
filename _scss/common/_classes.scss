@@ -1,0 +1,21 @@
+.cta{
+  @extend .aller-light;
+  @include transition(background, .25s);
+  outline: none;
+  color: $red;
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 1em;
+  &:hover{
+    background: $red;
+    color: white;
+  }
+}
+
+.divider{
+  content: "\2767";
+  color: #ccc;
+  display: block;
+  font-size: 2em;
+  text-align: center;
+}

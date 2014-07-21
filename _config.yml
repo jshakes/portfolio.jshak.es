@@ -1,0 +1,12 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+auto: true
+rdiscount:
+  extensions: [smart]
+
+name: James Shakespeare
+url: http://portfolio.jshak.es
+description: Converting caffeine into code and cake into cadence.
+twitter: jeshake
+github: jshakes

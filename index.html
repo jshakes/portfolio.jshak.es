@@ -1,0 +1,13 @@
+---
+layout: layout
+title: "Posts"
+---
+<ul id="projects" class="project-index">
+  {% for post in site.posts %}
+  <li class="project-item">
+    <a class="project-permalink" href="{{ post.url }}">
+      <img src="/img/thumbs/{{ post.thumb }}" alt="{{ post.title }}" />
+    </a>
+  </li>
+  {% endfor %}
+</ul>

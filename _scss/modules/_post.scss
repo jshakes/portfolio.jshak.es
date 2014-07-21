@@ -1,0 +1,152 @@
+// Post index
+
+.project-index{
+  padding: 20px 20px 0 0;
+  font-size: 0;
+  .project-item {
+    display: inline-block;
+    width: 1 / 3 * 100%;
+    padding: 0 0 20px 20px;
+  }
+  .project-permalink {
+    display: block;
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+// Single article
+
+// Article header
+
+.article-header{
+  text-align: center;
+  margin: 0 0 3em;
+
+  .article-publish-date{
+    display: block;
+  }
+}
+
+.article-permalink{
+  color: $body_copy;
+  display: block;
+  text-decoration: none;
+}
+
+.article-title{
+  @extend .page-title;
+}
+
+.article-hero-image{
+  @include border-radius(50%);
+  width: 200px;
+  height: 200px;
+  margin: 0 0 2em;
+}
+
+// Article body
+
+.article-body{
+  padding-bottom: 1.5em;
+  h3, h4, h5, h6{
+    padding: .5em 0 1.5em;
+  }
+  h3{
+    font-size: 2em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+  & > p{
+    margin: 0 0 1.5em;
+  }
+  &:after{
+    @extend .divider;
+  }
+  ul{
+    @include smaller-than(medium) {
+      padding-left: 1em;
+    }
+    li{
+      margin: 0 0 2em;
+      list-style: disc;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Article footer
+
+.article-footer{
+  font-style: italic;
+}
+
+.article-footer-text{
+  margin-bottom: 2em;
+}
+
+.article-footer-buttons{
+  text-align: center;
+  margin: 0 0 2em;
+}
+
+.back-to-posts{
+  @extend .cta;
+  @include js-icon("arrow-left");
+  font-style: normal;
+  margin-right: 2em;
+  &:before{
+    font-size: .75em;
+    margin-right: 1em;
+  }
+}
+
+.twitter-share-button{
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+// Post navigation
+
+.post-navigation{
+  display: table;
+  width: 100%;
+  position: relative;
+  .previous-post,
+  .next-post{
+    @include transition(background, .25s);
+    display: table-cell;
+    width: 50%;
+    color: $red;
+    padding: 1em;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1.25;
+    &:hover{
+      background: $red;
+      color: white;
+    }
+    &:before, &:after{
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+    }
+  }
+  .previous-post{
+    @include js-icon("arrow-left");
+    padding-left: 2em;
+    &:before{
+      left: .5em;
+    }
+  }
+  .next-post{
+    @include js-icon("arrow-right", "after");
+    text-align: right;
+    padding-right: 2em;
+    &:after{
+      right: .5em;
+    }
+  }
+}
