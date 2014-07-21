@@ -30,17 +30,8 @@ module.exports = (grunt) ->
         ]
         dest: "js/vendors.js"
 
-    coffee:
-      options:
-        bare: true
-      dist:
-        files: "js/app.js": ["_coffee/**/*.coffee"]
-      dev:
-        files: "_site/js/app.js": ["_coffee/**/*.coffee"]
-
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-contrib-compass"
-  grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-concat"
 
   grunt.registerTask "build", ["compass", "coffee", "concat"]

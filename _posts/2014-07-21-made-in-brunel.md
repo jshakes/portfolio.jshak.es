@@ -3,6 +3,13 @@ layout: post
 slug: made-in-brunel
 title: Made in Brunel
 thumb: miblogo.png
+images:
+- src: mib1_imac.jpg
+  type: imac
+- src: mib2_imac.jpg
+  type: imac
+- src: mib-3.jpg
+- src: mib4.jpg
 ---
 
 Made in Brunel is the annual showcase of work from Brunel University’s School of Engineering and Design. Each year, final year students are given the freedom and means to make the show unique to their year, with total organisational control. For 2011, Made in Brunel felt a fresh online presence was needed.

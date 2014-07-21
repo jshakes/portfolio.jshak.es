@@ -1,0 +1,25 @@
+.slideshow {
+  height: 500px;
+  margin: 2em 0;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+  img {
+    width: 80%;
+  }
+  &.imac{
+    height: 500px;
+    background: url("../img/imac_slide_bg.png") no-repeat 50% 0;
+    background-size: auto 100%;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 5.4%;
+      width: auto;
+      height: 67.2%;
+      margin-left: -298px;
+    }
+  }
+}

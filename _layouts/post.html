@@ -3,21 +3,19 @@ layout: layout
 ---
 
 <article class="page-content">
-  <section class="article-header">
-    {% if page.image %}
-    <img class="article-hero-image" src="/img/post_images/{{ page.image }}" alt="{{ page.title }}">
-    {% endif %}
-    <a class="article-permalink" href="{{ page.url }}">
-      <h1 class="article-title">{{ page.title }}</h1>
+  <div class="project-header">
+    <a class="project-permalink" href="{{ page.url }}">
+      <h1 class="project-title">{{ page.title }}</h1>
     </a>
-  </section>
-  <section class="article-body">
-    {{ content }}
-  </section>
-  <section class="article-footer">
-    <div class="article-footer-buttons">
-      <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter }}" class="twitter-share-button" data-lang="en">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+  <div class="slideshow">
+    {% for image in page.images %}
+    <div class="slide {{ image.type }}">
+      <img src="/img/full/{{ image.src }}" />
     </div>
-  </section>
+    {% endfor %}
+  </div>
+  <div class="project-body">
+    {{ content }}
+  </div>
 </article>

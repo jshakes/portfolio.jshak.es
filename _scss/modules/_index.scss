@@ -1,0 +1,15 @@
+.project-index{
+  padding: 20px 20px 0 0;
+  font-size: 0;
+  .project-item {
+    display: inline-block;
+    width: 1 / 3 * 100%;
+    padding: 0 0 20px 20px;
+  }
+  .project-permalink {
+    display: block;
+    & > img {
+      width: 100%;
+    }
+  }
+}
