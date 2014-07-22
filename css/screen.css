@@ -342,10 +342,19 @@ em {
 /* line 11, ../_scss/modules/_index.scss */
 .project-index .project-permalink {
   display: block;
+  background: #e94127;
 }
-/* line 13, ../_scss/modules/_index.scss */
+/* line 14, ../_scss/modules/_index.scss */
 .project-index .project-permalink > img {
   width: 100%;
+  -webkit-transition: opacity, 0.2s;
+  -moz-transition: opacity, 0.2s;
+  -o-transition: opacity, 0.2s;
+  transition: opacity, 0.2s;
+}
+/* line 18, ../_scss/modules/_index.scss */
+.project-index .project-permalink:hover > img {
+  opacity: 0.5;
 }
 
 /* line 3, ../_scss/modules/_home.scss */

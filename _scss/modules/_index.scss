@@ -10,8 +10,13 @@
   }
   .project-permalink {
     display: block;
+    background: $red;
     & > img {
       width: 100%;
+      @include transition(opacity, .2s);
+    }
+    &:hover > img {
+      opacity: 0.5;
     }
   }
 }
