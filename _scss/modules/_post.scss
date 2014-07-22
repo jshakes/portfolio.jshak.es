@@ -44,4 +44,10 @@
       line-height: 1.5;
     }
   }
+  a{
+    color: $red;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }

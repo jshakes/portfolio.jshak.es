@@ -255,18 +255,10 @@ em {
 }
 /* line 3, ../_scss/base/_layout.scss */
 .content-wrapper a {
-  text-decoration: none;
-}
-/* line 6, ../_scss/base/_layout.scss */
-.content-wrapper p a {
-  color: #e94127;
-}
-/* line 8, ../_scss/base/_layout.scss */
-.content-wrapper p a:hover {
   text-decoration: underline;
 }
 
-/* line 16, ../_scss/base/_layout.scss */
+/* line 10, ../_scss/base/_layout.scss */
 .site-header {
   text-align: center;
   padding: 2em 0;
@@ -274,13 +266,13 @@ em {
   color: white;
 }
 
-/* line 23, ../_scss/base/_layout.scss */
+/* line 17, ../_scss/base/_layout.scss */
 .site-header-permalink {
   color: white;
   text-decoration: none;
 }
 
-/* line 28, ../_scss/base/_layout.scss */
+/* line 22, ../_scss/base/_layout.scss */
 .site-header-icon {
   display: inline;
   font-size: 0;
@@ -295,35 +287,35 @@ em {
   text-transform: none;
   line-height: 1;
 }
-/* line 32, ../_scss/base/_layout.scss */
+/* line 26, ../_scss/base/_layout.scss */
 .site-header-icon:before {
   font-size: 60px;
 }
 
-/* line 39, ../_scss/base/_layout.scss */
+/* line 33, ../_scss/base/_layout.scss */
 .site-footer {
   text-align: center;
   color: #666666;
   padding: 2em 0;
 }
-/* line 43, ../_scss/base/_layout.scss */
+/* line 37, ../_scss/base/_layout.scss */
 .site-footer a {
   color: #666666;
   text-decoration: none;
 }
-/* line 46, ../_scss/base/_layout.scss */
+/* line 40, ../_scss/base/_layout.scss */
 .site-footer a:hover {
   text-decoration: underline;
 }
 
-/* line 54, ../_scss/base/_layout.scss */
+/* line 48, ../_scss/base/_layout.scss */
 .page-content {
   max-width: 1280px;
   margin: 3em auto 0;
   padding: 0 1em;
 }
 
-/* line 60, ../_scss/base/_layout.scss */
+/* line 54, ../_scss/base/_layout.scss */
 .page-title, .project-title {
   font-size: 3em;
   margin-bottom: 1em;
@@ -491,6 +483,14 @@ em {
   margin: 0 0 2em;
   list-style: disc;
   line-height: 1.5;
+}
+/* line 47, ../_scss/modules/_post.scss */
+.project-body a {
+  color: #e94127;
+}
+/* line 49, ../_scss/modules/_post.scss */
+.project-body a:hover {
+  text-decoration: underline;
 }
 
 /* line 1, ../_scss/modules/_slideshow.scss */
