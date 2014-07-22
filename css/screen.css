@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 15, ../_scss/common/_classes.scss */
-.divider, .intro:after, .project-body:after {
+.divider, .project-body:after {
   content: "\2767";
   color: #ccc;
   display: block;
@@ -255,10 +255,15 @@ em {
 }
 /* line 3, ../_scss/base/_layout.scss */
 .content-wrapper a {
+  color: #e94127;
+  text-decoration: none;
+}
+/* line 6, ../_scss/base/_layout.scss */
+.content-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* line 10, ../_scss/base/_layout.scss */
+/* line 14, ../_scss/base/_layout.scss */
 .site-header {
   text-align: center;
   padding: 2em 0;
@@ -266,13 +271,13 @@ em {
   color: white;
 }
 
-/* line 17, ../_scss/base/_layout.scss */
+/* line 21, ../_scss/base/_layout.scss */
 .site-header-permalink {
   color: white;
   text-decoration: none;
 }
 
-/* line 22, ../_scss/base/_layout.scss */
+/* line 26, ../_scss/base/_layout.scss */
 .site-header-icon {
   display: inline;
   font-size: 0;
@@ -287,35 +292,35 @@ em {
   text-transform: none;
   line-height: 1;
 }
-/* line 26, ../_scss/base/_layout.scss */
+/* line 30, ../_scss/base/_layout.scss */
 .site-header-icon:before {
   font-size: 60px;
 }
 
-/* line 33, ../_scss/base/_layout.scss */
+/* line 37, ../_scss/base/_layout.scss */
 .site-footer {
   text-align: center;
   color: #666666;
   padding: 2em 0;
 }
-/* line 37, ../_scss/base/_layout.scss */
+/* line 41, ../_scss/base/_layout.scss */
 .site-footer a {
   color: #666666;
   text-decoration: none;
 }
-/* line 40, ../_scss/base/_layout.scss */
+/* line 44, ../_scss/base/_layout.scss */
 .site-footer a:hover {
   text-decoration: underline;
 }
 
-/* line 48, ../_scss/base/_layout.scss */
+/* line 52, ../_scss/base/_layout.scss */
 .page-content {
   max-width: 1280px;
   margin: 3em auto 0;
   padding: 0 1em;
 }
 
-/* line 54, ../_scss/base/_layout.scss */
+/* line 58, ../_scss/base/_layout.scss */
 .page-title, .project-title {
   font-size: 3em;
   margin-bottom: 1em;
@@ -325,18 +330,20 @@ em {
 .project-index {
   padding: 20px 20px 0 0;
   font-size: 0;
+  max-width: 1024px;
+  margin: 0 auto;
 }
-/* line 4, ../_scss/modules/_index.scss */
+/* line 6, ../_scss/modules/_index.scss */
 .project-index .project-item {
   display: inline-block;
   width: 33.33333%;
   padding: 0 0 20px 20px;
 }
-/* line 9, ../_scss/modules/_index.scss */
+/* line 11, ../_scss/modules/_index.scss */
 .project-index .project-permalink {
   display: block;
 }
-/* line 11, ../_scss/modules/_index.scss */
+/* line 13, ../_scss/modules/_index.scss */
 .project-index .project-permalink > img {
   width: 100%;
 }
@@ -344,7 +351,7 @@ em {
 /* line 3, ../_scss/modules/_home.scss */
 .intro {
   padding: 3.5em 1em 1.5em;
-  max-width: 1280px;
+  max-width: 640px;
   margin: 0 auto;
   text-align: center;
   font-style: italic;
@@ -354,17 +361,17 @@ em {
   margin: 1.5em 0 .25em;
 }
 
-/* line 15, ../_scss/modules/_home.scss */
+/* line 17, ../_scss/modules/_home.scss */
 .contact-links {
   margin: 1em 0 0;
 }
 
-/* line 19, ../_scss/modules/_home.scss */
+/* line 21, ../_scss/modules/_home.scss */
 .contact-link {
   display: inline-block;
   margin: 0 1em;
 }
-/* line 22, ../_scss/modules/_home.scss */
+/* line 24, ../_scss/modules/_home.scss */
 .contact-link > a {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -380,18 +387,18 @@ em {
   height: 42px;
   display: block;
 }
-/* line 30, ../_scss/modules/_home.scss */
+/* line 32, ../_scss/modules/_home.scss */
 .contact-link > a:before {
   font-size: 20px;
   vertical-align: middle;
   line-height: 41px !important;
 }
-/* line 35, ../_scss/modules/_home.scss */
+/* line 37, ../_scss/modules/_home.scss */
 .contact-link > a:hover {
   background: #e94127;
   color: white;
 }
-/* line 41, ../_scss/modules/_home.scss */
+/* line 43, ../_scss/modules/_home.scss */
 .contact-link .contact-email {
   font-size: 0;
 }
@@ -406,7 +413,7 @@ em {
   line-height: 1;
   font-size: 1rem;
 }
-/* line 44, ../_scss/modules/_home.scss */
+/* line 46, ../_scss/modules/_home.scss */
 .contact-link .contact-twitter {
   font-size: 0;
 }
@@ -421,7 +428,7 @@ em {
   line-height: 1;
   font-size: 1rem;
 }
-/* line 47, ../_scss/modules/_home.scss */
+/* line 49, ../_scss/modules/_home.scss */
 .contact-link .contact-github {
   font-size: 0;
 }
@@ -462,11 +469,11 @@ em {
 }
 /* line 25, ../_scss/modules/_post.scss */
 .project-body h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 /* line 28, ../_scss/modules/_post.scss */
 .project-body h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 /* line 31, ../_scss/modules/_post.scss */
 .project-body > p {
@@ -484,42 +491,38 @@ em {
   list-style: disc;
   line-height: 1.5;
 }
-/* line 47, ../_scss/modules/_post.scss */
-.project-body a {
-  color: #e94127;
-}
-/* line 49, ../_scss/modules/_post.scss */
-.project-body a:hover {
-  text-decoration: underline;
-}
 
 /* line 1, ../_scss/modules/_slideshow.scss */
 .slideshow {
   height: 500px;
   margin: 2em 0;
+  background: url("../img/arrow-keys.gif") no-repeat 50% 100%;
+  padding-bottom: 42px;
 }
 
-/* line 6, ../_scss/modules/_slideshow.scss */
+/* line 8, ../_scss/modules/_slideshow.scss */
 .slide {
   position: relative;
   text-align: center;
+  padding-bottom: 42px;
+  width: 100%;
+  height: 100%;
 }
-/* line 9, ../_scss/modules/_slideshow.scss */
+/* line 14, ../_scss/modules/_slideshow.scss */
 .slide img {
   width: 80%;
 }
-/* line 12, ../_scss/modules/_slideshow.scss */
+/* line 17, ../_scss/modules/_slideshow.scss */
 .slide.imac {
-  height: 500px;
   background: url("../img/imac_slide_bg.png") no-repeat 50% 0;
   background-size: auto 100%;
 }
-/* line 16, ../_scss/modules/_slideshow.scss */
+/* line 20, ../_scss/modules/_slideshow.scss */
 .slide.imac img {
   position: absolute;
   left: 50%;
   top: 5.4%;
   width: auto;
   height: 67.2%;
-  margin-left: -298px;
+  margin-left: -280px;
 }

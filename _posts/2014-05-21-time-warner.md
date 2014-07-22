@@ -3,6 +3,7 @@ layout: post
 slug: time-warner
 title: Time Warner
 thumb: time-warner.png
+date: 2014-05-03 11:57:31+00:00
 images:
 - src: BH_TW_Desktop.png
 - src: timewarner1_imac.png

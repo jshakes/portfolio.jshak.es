@@ -1,16 +1,20 @@
 .slideshow {
   height: 500px;
   margin: 2em 0;
+  background: url("../img/arrow-keys.gif") no-repeat 50% 100%;
+  padding-bottom: 42px;
 }
 
 .slide {
   position: relative;
   text-align: center;
+  padding-bottom: 42px;
+  width: 100%;
+  height: 100%;
   img {
     width: 80%;
   }
   &.imac{
-    height: 500px;
     background: url("../img/imac_slide_bg.png") no-repeat 50% 0;
     background-size: auto 100%;
     img {
@@ -19,7 +23,7 @@
       top: 5.4%;
       width: auto;
       height: 67.2%;
-      margin-left: -298px;
+      margin-left: -280px;
     }
   }
 }

@@ -3,6 +3,7 @@ layout: post
 slug: made-in-brunel
 title: Made in Brunel
 thumb: miblogo.png
+date: 2011-06-03 11:57:31+00:00
 images:
 - src: mib1_imac.jpg
   type: imac

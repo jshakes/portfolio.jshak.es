@@ -3,6 +3,7 @@ layout: post
 slug: clare-price
 title: Clare Price
 thumb: cpthumb.jpg
+date: 2011-06-03 11:57:31+00:00
 images:
 - src: clareprice1_imac.jpg
   type: imac

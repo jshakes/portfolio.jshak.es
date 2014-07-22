@@ -1,7 +1,11 @@
 .content-wrapper{
   color: $body_copy;
   a{
-    text-decoration: underline;
+    color: $red;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
